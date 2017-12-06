@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Smash žaidimas</title>
+	<link rel="stylesheet" type="text/css" href="smash.css">
+</head>
+
+<body>
+
+<div id="overlay">
+	<div id="startGame">
+		<h1>Pradėti žaidimą spauskite start</h1>
+		<button type="button" name="button" onclick="start()">start</button>
+	</div>	
+	<div id="lostGame">
+		<h1>Tu pralaimėjai</h1>
+		<h2>Taškai</h2>
+		<h1 id="lostResult"></h1>
+		<button type="button" name="button" onclick="reset()">žaisti</button>
+	</div>
+</div>
+
+
+<div class="deadline">	
+		</div>
+
+		<div id="result">
+		Resilt: 0	
+		</div>
+
+		<div id="level">
+		Level: 1
+</div>
+
+
+	<div id="game-board">
+		
+
+		<div class="minion" id="minion1" onclick="smash('minion1')">
+			<div class="eye">	
+			</div>	
+		</div>
+		<div class="minion" id="minion2" onclick="smash('minion2')">
+			<div class="eye">	
+			</div>	
+		</div>
+		<div class="minion" id="minion3" onclick="smash('minion3')">
+			<div class="eye">	
+			</div>	
+		</div>
+
+	</div>
+
+<script type="text/javascript" src="smash.js"></script>
+
+</body>
+</html>

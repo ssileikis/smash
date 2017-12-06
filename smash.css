@@ -1,0 +1,106 @@
+body{
+	background: #666;
+	margin: 0 auto;
+}
+#game-board{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.minion{
+	width: 100px;
+	height: 200px;
+	background-color: yellow;
+	position: absolute;
+	bottom: 0px;
+	margin: 0px 50px;
+	-webkit-border-top-left-radius: 50px;
+	-webkit-border-top-right-radius: 50px;
+	-moz-border-radius-topleft: 50px;
+	-moz-border-radius-topright: 50px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
+
+#minion1{
+left: 50px;
+}
+
+#minion2{
+	left: 50%;
+margin-left: -50px;
+}
+
+#minion3{
+right: 50px;
+}
+
+.minion > .eye{
+	width: 60px;
+	height: 60px;
+	margin-left: 14px;
+	margin-top: 20px;
+	background: #fff;
+	border: 6px solid #ccc;
+	border-radius: 50%; 
+}
+.deadline{
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	bottom: 600px;
+	left: 0px;
+	background: red;
+}
+#result{
+	font-size: 40px;
+	width: 200px;
+	height: 60px;
+	color: white;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+#level{
+	font-size: 40px;
+	width: 200px;
+	height: 60px;
+	color: red;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+
+}
+#overlay{
+	position: absolute;
+	z-index: 1000;
+	background: rgba(255,255,255, 0.5);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+#startGame{
+	width: 400px;
+	height: 200px;
+	text-align: center;
+	background: white;
+	position: absolute;
+	z-index: 1001;
+	top: 100px;
+	left: 50%;
+	margin-left: -200px;
+
+}
+#lostGame{
+	width: 400px;
+	height: 200px;
+	text-align: center;
+	background: white;
+	position: absolute;
+	z-index: 1001;
+	top: 100px;
+	left: 50%;
+	margin-left: -200px;
+	display: none;
+}

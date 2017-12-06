@@ -38,12 +38,12 @@ function lose(){
 	clearTimeout(myTimer);
 	document.getElementById('overlay').style.display = 'block';
 	document.getElementById('lostGame').style.display = 'block';
-	document.getElementById('lostResult').innerText = 'result';
+	document.getElementById('lostResult').innerText = result;
 }
 
 function smash(minion){
 	result = result + 1;
-	document.getElementById('result').innerText = "Result:" + result;
+	document.getElementById('result').innerText = "result:" + result;
 
 
 	if(result % 10 == 0){
@@ -55,14 +55,14 @@ function smash(minion){
 }
 
 function reset(){
-	document.getElementByid('overlay').style.display = "none";
+	document.getElementById('overlay').style.display = "none";
 	minion1.style.height = "200px";
 	minion2.style.height = "200px";
 	minion3.style.height = "200px";
 	result = 0;
 	level = 1;
-	document.getElementByid('result').innerText = "Result: 0";
-	document.getElementByid('level').innerText = "level: 1";
+	document.getElementById('result').innerText = "result: 0";
+	document.getElementById('level').innerText = "level: 1";
 	grow();
 
 }
